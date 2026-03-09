@@ -142,7 +142,7 @@ img {
 #profileimg {
     grid-column: 3 / 4;
     grid-row: 2 / 4;
-    width: auto;
+    width: 100%;
 }
 
 .right {
