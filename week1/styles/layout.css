@@ -23,6 +23,7 @@ main {
     background-color: lightgray;
     grid-column: 1 / 2;
     padding: 1rem;
+    height: 250px;
 }
 
 footer {
@@ -64,8 +65,3 @@ footer {
     grid-column: 1 / 2;
 }
 
-.right {
-    background-color: whitesmoke;
-    grid-column: 2 / 3;
-    padding: 1rem;
-}
