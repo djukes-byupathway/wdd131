@@ -1,0 +1,29 @@
+/* large view navigation ************************************/
+@media (min-width: 800px) {
+    h1 {
+        font-size: 1rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 25px;
+            place-items: center;
+        }
+}
