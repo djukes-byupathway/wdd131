@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - David Jukes - Place page">
+    <meta name="author" content="David Jukes">
+    <link rel="stylesheet" href="styles/place.css">
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/place.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Place Title</h1>
+    </header>
+    <main>
+        <div  class="card">
+            <h2>Data</h2>
+            <span class="label">Area:  </span><span> Value</span>
+            <span class="label">Population:  </span><span> Value</span>
+            <span class="label">Capital:  </span><span> Value</span>
+            <span class="label">Languages:  </span><span> Value</span>
+            <span class="label">Time Zone:  </span><span> Value</span>
+            <span class="label">Calling Code:  </span><span> Value</span>
+            <span class="label">Internet TLD:  </span><span> Value</span>
+        </div>
+
+        <div class="card">
+            <h2>Weather</h2>
+            <img src="images/weather-color-sun-cloud-svgrepo-com.svg" alt="partly cloudy">
+            <span id="icon_emoji">⛅</span>
+            <span class="label">Temperature: </span>Value
+            <span class="label">Conditions: </span>Value
+            <span class="label">Wind: </span>Value
+            <span class="label">Wind Chill: </span>Value
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> 🇺🇸 David Jukes 🇺🇸 Texas, USA</p>
+        <!-- year should be displayed as the copyright symbol then just year -->
+        <p id="lastModified"></p>
+        <!-- last modified should be in this format: 05/30/2025 13:52:42 -->
+    </footer>
+</body>
+
+</html>

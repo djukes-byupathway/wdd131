@@ -13,6 +13,9 @@
 
     .navigation {
         flex-direction: row;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
     }
 
     .navigation a {
@@ -20,10 +23,10 @@
         flex: 1 1 100%;
     }
 
-        .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            grid-gap: 25px;
-            place-items: center;
-        }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 25px;
+        place-items: center;
+    }
 }

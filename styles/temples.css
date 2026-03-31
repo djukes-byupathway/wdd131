@@ -59,14 +59,11 @@ figcaption {
     content: "❎";
 }
 
-
 .navigation {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    list-style: none;
     background-color: lightgreen;
-    color: #fff;
+    color: #333;
 }
 
 .navigation a {
@@ -101,4 +98,3 @@ figcaption {
     grid-gap: 25px;
     place-items: center;
 }
-
