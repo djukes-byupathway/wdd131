@@ -12,35 +12,44 @@
     <script defer src="scripts/place.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Place Title</h1>
+        <h1>Dallas, Texas, USA</h1>
     </header>
+
     <main>
-        <div  class="card">
+        <div class="hero">
+            <picture>
+                <source srcset="images/dallas-bridge-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/dallas-bridge-medium.webp" media="(min-width: 600px)">
+                <img src="images/dallas-bridge-small.webp" alt="Dallas, TX" width="500" height="250">
+            </picture>
+        </div>
+        <div class="card data">
             <h2>Data</h2>
-            <span class="label">Area:  </span><span> Value</span>
-            <span class="label">Population:  </span><span> Value</span>
-            <span class="label">Capital:  </span><span> Value</span>
-            <span class="label">Languages:  </span><span> Value</span>
-            <span class="label">Time Zone:  </span><span> Value</span>
-            <span class="label">Calling Code:  </span><span> Value</span>
-            <span class="label">Internet TLD:  </span><span> Value</span>
+            <span class="label">Area: </span><span class="value"> Value</span>
+            <span class="label">Population: </span><span class="value"> Value</span>
+            <span class="label">Capital: </span><span class="value"> Value</span>
+            <span class="label">Languages: </span><span class="value"> Value</span>
+            <span class="label">Time Zone: </span><span class="value"> Value</span>
+            <span class="label">Calling Code: </span><span class="value"> Value</span>
+            <span class="label">Internet TLD: </span><span class="value"> Value</span>
         </div>
 
-        <div class="card">
+        <div class="card weather">
             <h2>Weather</h2>
-            <img src="images/weather-color-sun-cloud-svgrepo-com.svg" alt="partly cloudy">
-            <span id="icon_emoji">⛅</span>
-            <span class="label">Temperature: </span>Value
-            <span class="label">Conditions: </span>Value
-            <span class="label">Wind: </span>Value
-            <span class="label">Wind Chill: </span>Value
+            <img id="icon-svg" src="images/weather-color-sun-cloud-svgrepo-com.svg" alt="partly cloudy">
+            <span class="label">Temperature: </span> <span class="value">Value</span>
+            <span class="label">Conditions: </span> <span class="value">Value</span>
+            <span class="label">Wind: </span> <span class="value">Value</span>
+            <span class="label">Wind Chill: </span> <span class="value"> Value</span>
         </div>
     </main>
+
     <footer>
         <p><span id="currentyear"></span> 🇺🇸 David Jukes 🇺🇸 Texas, USA</p>
         <!-- year should be displayed as the copyright symbol then just year -->

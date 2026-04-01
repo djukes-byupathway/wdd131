@@ -6,8 +6,36 @@
         margin-left: 0;
     }
 
+    .data {
+        position: absolute;
+        top: 7rem;
+        left: 2rem;
+        font-size: smaller;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 1rem;
+        right: 2rem;
+    }
+
+    #icon-svg {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: "  ⛅";
+    }
+    .card {
+        width: 250px;
+    }
 }
 
+:root {
+    --div-color: #add8e6;
+    --accent1-color: #C1C0A4ff;
+    --header-color: #274E60ff;
+}
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +47,8 @@ body {
 }
 
 header {
-    background-color: lightgreern;
+    background-color: var(--header-color);
+    color: #fff;
     padding: 1.5rem;
 }
 
@@ -35,7 +64,8 @@ footer {
     text-align: center;
 }
 
-h1, h2 {
+h1,
+h2 {
     text-align: center;
 }
 
@@ -44,20 +74,23 @@ h2 {
     text-align: center;
 }
 
-
-
 .card {
-    background-color: rgb(211, 227, 211);
+    
+    background-color: var(--div-color);
     border: 1px solid #777;
+    margin: 1rem;
     padding: 1rem;
     display: grid;
     grid-template-columns: 50% 50%;
-    text-align: left;
+    text-align: center;
 }
 
 .card img {
     width: 64px;
     grid-column: 1 / 3;
+    text-align: center;
+    background-color: var(--header-color);
+    margin: auto;
 }
 
 .label {
@@ -66,7 +99,18 @@ h2 {
     padding-right: 1rem;
 }
 
-#icon_emoji {
-    text-align: center;
+.value {
+    text-align: left;
+}
+
+#icon-svg {
     grid-column: 1 / 3;
+
+}
+
+
+.hero img {
+    width: 100%;
+    height: auto;
+
 }
