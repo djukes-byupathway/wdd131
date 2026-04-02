@@ -19,7 +19,7 @@ if (tmp_units = 'F' && tmp <= 50 && spd > 3) {
     tmp_units = '°C';
 } else {
     chill = 'N/A';
-}
+};
 
 temp.innerHTML = ` <span>${tmp} ${tmp_units}</span>`;
 cond.innerHTML = ` <span>${cnd}</span>`;
@@ -34,4 +34,4 @@ function calculateWindChill(tmp_units, temp, speed) {
     } else
         return 'N/A';
 
-}
+};

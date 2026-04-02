@@ -1,0 +1,48 @@
+:root {
+    --div-color: #add8e6;
+    --accent1-color: #C1C0A4ff;
+    --header-color: #274E60ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: var(--header-color);
+    padding: 1.5rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+margin: 0 auto;
+width: 400px;
+display: flex;
+flex-direction: column;
+}
+
+img {
+    width: 100%;
+    /* display: block; */
+    background-color: #000;
+    animation: fade 15s;
+
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

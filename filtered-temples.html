@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album Page</title>
+    <meta name="description" content="Temple Picture Album page for WDD131 Week 4">
+    <meta name="author" content="David Jukes">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/filtered-temples.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+</head>
+
+<body>
+    <header>
+        <span>Temple Album</span>
+        <nav class="navigation">
+            <a href="#" id="homelink" title="Home">Home</a>
+            <a href="#" id="oldlink" title="Old">Old</a>
+            <a href="#" id="newlink" title="New">New</a>
+            <a href="#" id="largelink" title="Large">Large</a>
+            <a href="#" id="smalllink" title="Small">Small</a>
+        </nav>
+        <button type="button" id="menu"></button>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div id="cont"  class="container stdlf"></div>
+
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> 🇺🇸 David Jukes 🇺🇸 Texas, USA</p>
+        <!-- year should be displayed as the copyright symbol then just year -->
+        <p id="lastModified"></p>
+        <!-- last modified should be in this format: 05/30/2025 13:52:42 -->
+    </footer>
+
+</body>
+
+</html>
