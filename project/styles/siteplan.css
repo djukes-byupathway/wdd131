@@ -23,6 +23,10 @@ div {
     background-color: var(--accent1-color);
 }
 
+ul {
+    margin: 1rem;
+}
+
 .container {
     display: grid;
     grid-template-columns: 50% 50%;
