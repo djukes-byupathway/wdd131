@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="Wdd131 Week 5 - Form Assignment">
+    <meta name="author" content="David Jukes">
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/form.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/form.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html" class="product-review">
+            <fieldset>
+                <legend>Product Review</legend>
+                <label>Product Name
+                    <select id="product" name="subject" required>
+                        <option value="" disabled selected>Select a Product... &#9662</option>
+                    </select>
+                </label>
+
+                <div>Overall Rating</div>
+                <label><input type="radio" id="1star" name="rating" value="1"> ☆ </label>
+                <label><input type="radio" id="2star" name="rating" value="2"> ☆☆ </label>
+                <label><input type="radio" id="3star" name="rating" value="3"> ☆☆☆ </label>
+                <label><input type="radio" id="4star" name="rating" value="4"> ☆☆☆☆ </label>
+                <label><input type="radio" id="5star" name="rating" value="5"> ☆☆☆☆ </label>
+                <label>Date of Installation <input type="date" id="installdate" name="installdate"></label>
+
+                <!-- useful features -->
+                <div>Which of the Features did you find useful in the product?<br><span class="ital">(Click all that apply)</span></div>
+                <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability </label>
+                <label><input type="checkbox" id="ease" name="ease" value="yes"> Ease of Use </label>
+                <label><input type="checkbox" id="performance" name="performance" value="yes"> Performance </label>
+                <label><input type="checkbox" id="design" name="design" value="yes"> Design </label>
+                <!-- Written Review -->
+                <label>Written Review <span class="opt">(Optional)</span> <input type="textarea" id="review" name="review"></label>
+                <!-- User Name -->
+                <label >Your Name <span class="opt">(Optional)</span> <input type="text" id="rname" name="rname" ></label>
+
+            </fieldset>
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+
+    
+        <footer>
+            <p><span id="currentyear"></span> 🇺🇸 David Jukes 🇺🇸 Texas, USA</p>
+            <!-- year should be displayed as the copyright symbol then just year -->
+            <p id="lastModified"></p>
+            <!-- last modified should be in this format: 05/30/2025 13:52:42 -->
+        </footer>
+    
+</body>

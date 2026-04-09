@@ -1,0 +1,187 @@
+/*----------- clear margin and padding, apply box layout --------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+   
+    /* Primary Colors */
+    --primary-0: #072b31;
+    --primary-100: #15788a;
+    --primary-200: #26c3df;
+    --primary-300: #7edbec;
+    --primary-400: #d3f3f8;
+
+    /* Secondary Colors */
+    --secondary-0: #071631;
+    --secondary-100: #153e8a;
+    --secondary-200: #2666df;
+    --secondary-300: #7ea5ec;
+    --secondary-400: #d3e0f8;
+
+    /* Accent Colors */
+    --accent-0: #073122;
+    --accent-100: #158a61;
+    --accent-200: #26df9e;
+    --accent-300: #7eecc5;
+    --accent-400: #d3f8eb;
+
+    /* Neutral Colors */
+    --neutral-0: #17191c;
+    --neutral-100: #3c4048;
+    --neutral-200: #6b7280;
+    --neutral-300: #a0a6b0;
+    --neutral-400: #d8dadf;
+                
+        
+}
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--neutral-400);
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: var(--primary-0);
+}
+
+header h1 {
+    margin: 0;
+    color: var(--primary-400);
+}
+
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: var(--color1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    border-bottom: solid 1px --neutral-0;
+}
+
+nav ul li a {
+    display: block;
+    background-color: #444;
+    color: #eee;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+/*----------- FORM STYLING --------------*/
+.product-review {
+    width: 100%;
+    max-width: 425px;
+}
+
+.product-review fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--secondary-0);
+    border-radius: 6px;
+    padding: .5rem 2%;
+    background-color: var(--secondary-300);
+}
+
+.product-review legend {
+    color: var(--secondary-0);
+}
+
+.product-review label {
+    display: block;
+    padding-top: 1rem;
+    color: var(--secondary-0);
+    font-size: .9rem;
+
+}
+
+.product-review div {
+    padding-top: 1rem;
+    color: var(--secondary-0);
+    font-size: .9rem;
+}
+
+.product-review input[type="text"],
+.product-review input[type="textarea"],
+.product-review input[type="tel"],
+.product-review input[type="email"],
+.product-review input[type="url"],
+.product-review input[type="date"],
+.product-review select,
+.product-review input[type="number"] {
+    background-color: var(--secondary-400);
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: var(--secondary-0);
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.product-review input[type="radio"],
+.product-review input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.product-review input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(var(--secondary-0), var(--secondary-100));
+    color: var(--primary-400);
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.product-review input:required {
+    border-right: solid 8px red;
+}
+
+.product-review input:required:valid {
+    border-right: solid 8px green;
+}
+
+.ital {
+    font-style: italic;
+}
+
+.opt {
+    font-style: italic;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: var(--primary-0);
+    padding: .5rem 2%;
+    text-align: center;
+    color: var(--neutral-400);
+}

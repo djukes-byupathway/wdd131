@@ -6,10 +6,6 @@ const largeLink = document.querySelector('#largelink');
 const oldLink = document.querySelector('#oldlink');
 const newLink = document.querySelector('#newlink');
 
-
-
-
-
 const temples = [
     {
         templeName: "Aba Nigeria",
@@ -166,6 +162,7 @@ smallLink.addEventListener("click", () => {
 
 //function for adding cards based on passed in array
 function displayCards(templeList) {
+    //empty container of temple cards
     document.querySelector(".container").innerHTML = "";
 
     for (let i = 0; i < templeList.length; i++) {
