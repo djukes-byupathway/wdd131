@@ -60,7 +60,7 @@ header h1 {
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: var(--color1);
+    background-color: var(--secondary-0);
 }
 
 nav ul {
@@ -70,13 +70,13 @@ nav ul {
 }
 
 nav ul li {
-    border-bottom: solid 1px --neutral-0;
+    border-bottom: solid 1px var(--neutral-0);
 }
 
 nav ul li a {
     display: block;
-    background-color: #444;
-    color: #eee;
+    background-color: var(--secondary-0);
+    color: var(--secondary-400);
     padding: .5rem 0;
     text-decoration: none;
     font-size: .9rem;
@@ -84,9 +84,14 @@ nav ul li a {
 }
 
 nav ul li.active a {
-    background-color: #000;
+    background-color: var(--secondary-200);
     color: #fff;
 }
+
+ nav ul li a:hover {
+     background-color: var(--secondary-300);
+     color: var(--primary-0);
+ }
 
 /*----------- MAIN --------------*/
 main {
@@ -127,7 +132,7 @@ main {
 }
 
 .product-review input[type="text"],
-.product-review input[type="textarea"],
+.product-review textarea,
 .product-review input[type="tel"],
 .product-review input[type="email"],
 .product-review input[type="url"],
@@ -185,3 +190,41 @@ footer {
     text-align: center;
     color: var(--neutral-400);
 }
+
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 35rem) {
+    /*----------- NAVIGATION --------------*/
+    nav ul {
+        display: flex;
+        margin-left: 2%;
+    }
+
+    nav ul li {
+        border: none;
+    }
+
+    nav ul li a {
+        padding: .5rem 2rem;
+    }
+
+    nav ul li a:hover {
+        background-color: var(--accent-300);
+        color: var(--primary-0);
+    }
+
+}
+
+/* end of media query */
+
+@media only screen and (min-width: 64rem) {
+
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 64rem;
+        margin: auto;
+    }
+}
+
+/* end of media query */
