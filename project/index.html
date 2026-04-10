@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Vault of Jukes Home Page - Gateway into realms of adventure">
+    <meta name="author" content="David Jukes">
+
+    <title>Vault of Jukes</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- external scripts -->
+    <script defer src="scripts/getdates.js"></script>
+
+    <!-- STYLE SHEETS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="styles/vault-small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="styles/vault-medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="styles/vault-large.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Vault Of Jukes</h1>
+    </header>
+    <nav>
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="upcoming.html">Upcoming Projects</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero-div"><img src="images/texasflag.jpg" alt=""></div>
+        <div>
+            <p>Home
+                page includes: heading with "Vault of Jukes" and menu for main site pages. Hero Image with Banner text
+                something like
+                "Create Epic Adventures" and a brief sentence or two about what the company does. A button or two. 
+                </p>
+        </div>
+        <section class="card-container">
+            <h2>what we do</h2>
+            <div class="card">
+                <h3>Original Settings</h3>
+                <div class="card-img"><img src="images/colonial_ranger_crossbow.png" alt=""></div>
+                <div class="card-txt">
+                    <p>We create fantasy worlds filled with mystery and adventure. </p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Innovative Mechanics</h3>
+                <div class="card-img"><img src="images/blue_dragon_wizard_greek.png" alt=""></div>
+                <div class="card-txt">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptate, officia quam rem
+                        facere non. Incidunt cum veniam facere nostrum quia corrupti fuga quae, consequuntur excepturi
+                        aliquid enim non? Iste.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Collaborative Community</h3>
+                <div class="card-img"><img src="images/hexburg_sergent.png" alt=""></div>
+                <div class="card-txt">
+                    <p>After spending years of gaming with our friends from high school and college, we are branching
+                        out and broadening our reach. We invite all of you to join in our adventures and will look for
+                        ways to share with you via multiple channels and mediums</p>
+                </div>
+
+            </div>
+        </section>
+        <section class="sub-container">
+            <h2>Stay In the Loop</h2>
+            <form method="get" action="thankyou.html" class="sub-form">
+                <fieldset>
+                    <legend>Signup for the newsletter</legend>
+
+                    <!-- email -->
+                    <label for="email">email <input type="email" id="email" name="email"></label>
+
+                    <!-- subscriber Name -->
+                    <label for="sname">Your Name <span class="opt">(Optional)</span> <input type="text" id="sname"
+                            name="sname"></label>
+
+                    <!-- Types of games you play -->
+                    <div>
+                        Which type of games are you interested in? <span class="opt">(Optional)</span><br><span
+                            class="ital">(Click all that
+                            apply)</span>
+                    </div>
+                    <label for="rpg"><input type="checkbox" id="rpg" name="rpg" value="yes">
+                        Role Playing Game (RPG)
+                    </label>
+                    <label for="ccg"><input type="checkbox" id="ccg" name="ccg" value="yes">
+                        Collectable Card Game (CCG)
+                    </label>
+                    <label for="bg"><input type="checkbox" id="bg" name="bg" value="yes">
+                        Board Game
+                    </label>
+                    <label for="skirmish"><input type="checkbox" id="skirmish" name="skirmish" value="yes">
+                        Table Tope Skirmish Game
+                    </label>
+                    <label for="war"><input type="checkbox" id="war" name="war" value="yes">
+                        Table Top War Game
+                    </label>
+                    <!-- Feedback -->
+                    <label for="feedback">Feedback / Suggestions <span class="opt">(Optional)</span>
+                        <textarea name="feedback" id="feedback" rows="5">
+                                </textarea>
+                    </label>
+
+
+                </fieldset>
+                <input type="submit" value="Post Review">
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-links"><a href="siteplan.html">Site Plan</a></div>
+        <p><span id="currentyear"></span> 🇺🇸 David Jukes 🇺🇸 Texas, USA</p>
+        <!-- year should be displayed as the copyright symbol then just year -->
+        <p id="lastModified"></p>
+        <!-- last modified should be in this format: 05/30/2025 13:52:42 -->
+    </footer>
+</body>
+
+</html>
