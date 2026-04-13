@@ -61,6 +61,7 @@ if (path.includes('/upcoming.html')) {
 hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
+
 });
 
 
