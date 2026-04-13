@@ -36,35 +36,47 @@
 
     /*----------- MAIN --------------*/
 
+    /* change card containter to display three columns */
     .card-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1rem;
     }
-
-    .card-container h2 {
+    /* card containter heading spans all columns */
+    .card-container h3 {
         grid-column: 1 / 4;
         text-align: center;
     }
-
+    /* card switches to have different sized rows, and three equal sized columns */
     .card {
         grid: .25fr 1fr 1.5fr / 1fr 1fr 1fr;
         max-height: 40rem;
     }
-
-    .card h3 {
+    /* card heading spans all columns */
+    .card h4 {
         grid-area: 1 / 1 / 2 / 4;
     }
-
+    /* card image div changes to be the whole second row */
     .card-img {
         grid-area: 2 / 1 / 3 / 4;
         padding-right: 1rem;
         width: 100%;
+        height: auto;
     }
-
+    /* card text takes up the third row */
     .card-txt {
-        grid-area: 3 / 1 / 4 / 4;
+        grid-area: 3 / 1 / 4 /4;
     }
+    /* for the little card change height */
+    .lil-card {
+        height: auto;
+        max-height: 24rem;
+    }
+    /* */
+    .dbl-wide {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+        }
 
 
     /*----------- FOOTER --------------*/
@@ -87,23 +99,15 @@
 
 #banner {
     position: absolute;
-    top: 20rem;
+    top: 18rem;
     left: 1rem;
-    font-size: 1.2rem;
-    color: var(--accent-400);
-    --webkit-text-stroke: 2px var(--neutral-100);
 
 }
 
 #welcome {
     position: absolute;
-    top: 18rem;
+    top: 14rem;
     left: 1rem;
-    color: var(--accent-400);
-    --webkit-text-stroke: 2px var(--neutral-100);
 }
-
-
-
     /* end of media query */
 }

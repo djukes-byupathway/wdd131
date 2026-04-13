@@ -23,11 +23,23 @@
 
     /*----------- MAIN --------------*/
 
-.card {
-    
-    max-height: 50rem;
-}
+
     /*----------- FOOTER --------------*/
 
+#banner {
+    position: absolute;
+    top: 38rem;
+    left: 1rem;
 
+}
+
+#welcome {
+    position: absolute;
+    top: 35rem;
+    left: 1rem;
+}
+ .lil-card {
+     max-height: 32rem;
+ }
+}
 /* end of media query */

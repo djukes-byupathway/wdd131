@@ -12,6 +12,12 @@ const footer = document.querySelector('#foot');
 //list of projects
 const projects = [
     {
+        name: "Dave Stinks at Painting Minis",
+        target_release: "Winter 2026",
+        system: "DnD",
+        status: "In Development",
+        description: "Series of short videos of Dave trying to figure out what the hell is going wrong with the paint, brush, or design of minis that stop him from wanted to finish."
+    }, {
         name: "Valeigh",
         target_release: "Winter/Spring 2027",
         system: "DnD",
@@ -86,17 +92,16 @@ function addProjectsToPage(projects) {
         // create new card
         var newCard = document.createElement('div');
 
-        newCard.className = "card";
+        newCard.className = "proj-card";
         //populate card
         newCard.innerHTML = `
-        <h3>${newProject.name}</h3>
-        <p>Game System: ${newProject.system}</p>
-        <p>Target Release: ${newProject.target_release}</p>
-        <p>Status: ${newProject.status}</p>
-        <p>Description</p>
-        <div class="card-txt">
-            <p>${newProject.description}</p>
-        </div>
+        <h4>${newProject.name}</h4>
+        <span class="label">Game System: </span><span class="value">${newProject.system}</span>
+        <span class="label">Target Release: </span><span class="value">${newProject.target_release}</span>
+        <span class="label">Status:</span><span class="value">${newProject.status}</span>
+        <span class="label">Description:</span>
+        <p class="desc-val">${newProject.description}</p>
+
         `;
 
         document.getElementById("projects").appendChild(newCard);

@@ -48,38 +48,29 @@ body {
     font-family: 'Lato', 'Roboto', sans-serif;
 }
 
+
+
 /*----------- HEADER --------------*/
+header {
+    background-color: var(--primary-0);
+}
 
 h1 {
     margin: 0;
     font-family: 'Caveat', cursive;
     font-size: 3rem;
-
-    position: absolute;
-    right: 1.5rem;
-    top: .5rem;
-    z-index: 2;
     color: var(--accent-400);
     -webkit-text-stroke: 2px var(--neutral-100);
 
-}
 
-h2 {
-    font-family: 'Caveat', cursive;
-    margin-right: 1rem;
-    margin-top: 5rem;
-    font-size: 3rem;
 }
 
 /*----------- NAVIGATION --------------*/
 .navigation {
-    position: absolute;
-    top: 5rem;
-    left: .5rem;
+    background-color: var(--primary-0);
     display: flex;
     flex-direction: column;
-    background-color: var(--primary-0);
-    z-index: 1;
+
 }
 
 .navigation a {
@@ -87,6 +78,7 @@ h2 {
 }
 
 .navigation ul {
+    background-color: var(--primary-0);
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -106,9 +98,6 @@ h2 {
     ;
 }
 
-
-
-
 /*----------- MAIN --------------*/
 main {
     padding: 0.5rem 2%;
@@ -117,6 +106,15 @@ main {
     display: block;
 }
 
+h2 {
+    font-family: 'Caveat', cursive;
+    margin: 1rem;
+    font-size: 3rem;
+}
+
+h3 {
+    text-align: center;
+}
 
 /*----------- Card STYLING --------------*/
 .card-container {
@@ -126,6 +124,7 @@ main {
 
 }
 
+/* default card  has three columns and three rows */
 .card {
     display: grid;
     grid: 1fr 1fr 1fr / 1fr 1fr 1fr;
@@ -135,27 +134,75 @@ main {
     background-color: var(--neutral-300);
     color: var(--neutral-0);
 }
+/* card heading spans all columns and is centered horizontally */
+.card h4 {
+    grid-area: 1 / 1 / 4 / 4;
+    text-align: center;
+}
+/* card image div is located in the second row, and spans all columns */
+.card-img {
+    grid-area: 2 / 1 / 4 / 2;
+    margin: .5rem;
+}
+ /* card text takes up the third row */
+ .card-txt {
+     grid-area: 2 / 2 / 4 /4;
+    margin: .5rem;
+    padding: 0;
+ }
+ .card-txt p {
+    margin: 0;
+    padding:0;
+ }
 
-.card h3 {
-    grid-area: 1 / 2 / 2 / 4;
+/* imgage takes up 100% of width and has both a border and box shadow */
+.card-img img {
+
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--accent-200);
+    box-shadow: 3px 3px var(--neutral-200);
+
+}
+
+/*----------- Project Card STYLING --------------*/
+.proj-card {
+    display: grid;
+    grid: 1fr 1fr 1fr / repeat(1fr 8);
+    margin: .5rem;
+    padding: .5rem;
+    background-color: var(--neutral-300);
+    color: var(--neutral-0);
+    border: 1px solid var(--neutral-100);
+}
+
+.proj-card h4 {
+    grid-column: span 3;
     text-align: center;
 }
 
-.card-img {
-    grid-area: 1 / 1 / 4 / 2;
-    margin: .5rem;
+.proj-card p {
+    margin: .25rem;
+    padding: .25rem;
 }
 
-.card-img img {
-    width: 100%;
-    border: 1px solid var(--accent-200);
-    box-shadow: 3px 3px var(--neutral-200);
+.label {
+    font-weight: bold;
+    text-align: left;
+    grid-column: 1 / 2;
+    padding: .25rem .5rem 0;
 }
 
-.card-txt {
-    grid-area: 2 / 2 / 4 / 4;
-    padding: 0 .5rem;
+.value {
+    text-align: right;
+    padding: .25rem .5rem 0;
+    grid-column: 2 / 4;
 }
+
+.desc-val {
+    grid-area: 6 / 1 / 9 / 4;
+}
+
 
 /*----------- FORM STYLING --------------*/
 .sub-form {
@@ -266,9 +313,10 @@ footer {
     border: 0;
     background: none;
     color: var(--accent-400);
+
     position: absolute;
-    top: 2.25rem;
-    left: .5rem;
+    top: .75rem;
+    right: .5rem;
 }
 
 #menu::before {
@@ -292,13 +340,34 @@ footer {
 
 }
 
+.hero-div h1 {
+    background-color: none;
+    position: absolute;
+    left: 1.5rem;
+    top: .5rem;
+    z-index: 2;
+
+}
+
+.hero-div .navigation {
+    position: absolute;
+    top: 5rem;
+    left: .5rem;
+    z-index: 1;
+}
+
+/* .hero-div #menu {
+    top: .75rem;
+    left: .5rem;
+} */
 
 #banner {
     position: absolute;
-    top: 29rem;
+    top: 23rem;
     left: 1rem;
     max-height: 8rem;
     font-size: 1.2rem;
+    margin: .5rem;
     color: var(--accent-400);
     --webkit-text-stroke: 2px var(--neutral-100);
 
@@ -306,8 +375,9 @@ footer {
 
 #welcome {
     position: absolute;
-    top: 27rem;
+    top: 16rem;
     right: 1rem;
+    margin: .5rem;
     color: var(--accent-400);
     --webkit-text-stroke: 2px var(--neutral-100);
 }
