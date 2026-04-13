@@ -1,3 +1,15 @@
+//for hamburger 
+const hamButton = document.querySelector("#menu");
+const navigation = document.querySelector(".navigation");
+//found this blurp on google to identify if we are on the index page, totally using it
+const path = window.location.pathname;
+//for seeting footer elements
+const currentyear = document.querySelector("#currentyear");
+const lastModified = document.querySelector("#lastModified");
+// use the date object
+const today = new Date();
+const footer = document.querySelector('#foot');
+//list of projects
 const projects = [
     {
         name: "Valeigh",
@@ -25,10 +37,46 @@ const projects = [
         description: "Plucked from your world by a mad wizard, given a simple ultimatum, find the Panthar of Harsed within 90 days, or die. Your party must band together, avoid deathly flora and fauna, make friends, and get your hands on that Panthar! This one can be great fun for DMs who want to poke at murder hobo parties, a little Suicide Squad action."
     },
 ];
-//call to function to add options to select
-addProjectsToPage(projects);
+
+// if home page, increment page views
+if (path.includes('/index.html')) {
+    storeValue();
+};
+// update footer elements
+setFooterElements();
+//if upcoming project page - add project cards
+if (path.includes('/upcoming.html')) {
+    //call to function to add cards for each project
+    addProjectsToPage(projects);   
+};
 
 
+//event listener for hamburger
+hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
+});
+
+
+function setFooterElements() {
+    //set footer elements
+    currentyear.innerHTML = `©<span>${today.getFullYear()}</span>`;
+    lastModified.innerHTML = `Last Modification: <span>${document.lastModified}`;
+    var newPara = document.createElement('p');
+    const pageCnt = JSON.parse(localStorage.getItem("viewCount"));
+    // newPara.innerHTML = 'Page Views:${document.lastModified}';
+    //wPara.innerHTML = localStorage.getItem("ViewCount");
+    newPara.innerHTML = `Page Views: ${pageCnt}`;
+    footer.appendChild(newPara);
+};
+
+function storeValue() {
+    var cnt = JSON.parse(localStorage.getItem("viewCount") || 0);
+    cnt++;
+    localStorage.setItem("viewCount", JSON.stringify(cnt));
+};
+
+//function for adding project via dom manipulation
 function addProjectsToPage(projects) {
     //grab the projects div from the page
     //loop through the project list and create cards
@@ -50,8 +98,8 @@ function addProjectsToPage(projects) {
             <p>${newProject.description}</p>
         </div>
         `;
+
         document.getElementById("projects").appendChild(newCard);
-
-
     }
 };
+

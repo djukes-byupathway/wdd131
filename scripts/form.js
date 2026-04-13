@@ -1,3 +1,4 @@
+
 const products = [
     {
         id: "fc-1888",
@@ -28,7 +29,7 @@ const products = [
 
 //call to function to add options to select
 addProductsToSelect(products);
-//localStorage.setItem('username', 'JohnDoe');
+
 
 function addProductsToSelect(products) {
     const selectProduct = document.getElementById("product");

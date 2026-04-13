@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- external scripts -->
-    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/vault.js"></script>
 
     <!-- STYLE SHEETS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,27 +30,38 @@
 </head>
 
 <body>
-    <header>
-        <h1>Vault Of Jukes</h1>
-    </header>
-    <nav>
-        <ul>
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="upcoming.html">Upcoming Projects</a></li>
-        </ul>
-    </nav>
+    <!-- <header></header> -->
     <main>
-        <div class="hero-div"><img src="images/texasflag.jpg" alt=""></div>
+        <div class="hero-div">
+            <picture>
+                <source srcset="images/vault-large.webp" media="(min-width:1028px)">
+                <source srcset="images/vault-medium.webp" media="(min-width:600px)">
+                <img src="images/vault-small.webp" alt="Vault of Jukes " loading="lazy">
+            </picture>
+
+            <h1>Vault Of Jukes</h1>
+            <nav class="navigation">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="upcoming.html">Upcoming Projects</a></li>
+                </ul>
+            </nav>
+            <button type="button" id="menu"></button>
+
+            <h2 id="welcome">Welcome to the Vault</h2>
+            <p id="banner">Home to amazing adventures, clever traps, tricks, and tools for game masters, and welcoming
+                and loyal
+                community.
+            </p>
+
+        </div>
+
         <div>
-            <p>Home
-                page includes: heading with "Vault of Jukes" and menu for main site pages. Hero Image with Banner text
-                something like
-                "Create Epic Adventures" and a brief sentence or two about what the company does. A button or two. 
-                </p>
+
         </div>
         <section class="card-container">
-            <h2>what we do</h2>
+            <h2>What Are We About?</h2>
             <div class="card">
                 <h3>Original Settings</h3>
                 <div class="card-img"><img src="images/colonial_ranger_crossbow.png" alt=""></div>
@@ -85,7 +96,7 @@
                     <legend>Signup for the newsletter</legend>
 
                     <!-- email -->
-                    <label for="email">email <input type="email" id="email" name="email"></label>
+                    <label for="email">email <input type="email" id="email" name="email" required></label>
 
                     <!-- subscriber Name -->
                     <label for="sname">Your Name <span class="opt">(Optional)</span> <input type="text" id="sname"
@@ -125,7 +136,7 @@
         </section>
 
     </main>
-    <footer>
+    <footer id="foot">
         <div class="footer-links"><a href="siteplan.html">Site Plan</a></div>
         <p><span id="currentyear"></span> 🇺🇸 David Jukes 🇺🇸 Texas, USA</p>
         <!-- year should be displayed as the copyright symbol then just year -->

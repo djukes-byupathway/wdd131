@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- external scripts -->
-    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/vault.js"></script>
 
     <!-- STYLE SHEETS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,17 +30,18 @@
 </head>
 
 <body>
-    <header>
-        <h1>Vault Of Jukes</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="#">About Us</a></li>
-            <li><a href="upcoming.html">Upcoming Projects</a></li>
-        </ul>
-    </nav>
+    <header></header>
     <main>
+        <h1>Vault Of Jukes</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="aboutus.html">About Us</a></li>
+                <li><a href="upcoming.html">Upcoming Projects</a></li>
+            </ul>
+        </nav>
+        <button type="button" id="menu"></button>
+
         <h2>About Us</h2>
         <section>
             <h3>Our Mission</h3>
@@ -154,7 +155,7 @@
         </section>
 
     </main>
-    <footer>
+    <footer id="foot">
         <div class="footer-links"><a href="siteplan.html">Site Plan</a></div>
         <p><span id="currentyear"></span> 🇺🇸 David Jukes 🇺🇸 Texas, USA</p>
         <!-- year should be displayed as the copyright symbol then just year -->

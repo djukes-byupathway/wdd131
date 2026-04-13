@@ -11,8 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- external scripts -->
-    <script defer src="scripts/getdates.js"></script>
-    <script defer src="scripts/proj-list.js"></script>
+    <!-- <script defer src="scripts/getdates.js"></script> -->
+    <script defer src="scripts/vault.js"></script>
 
     <!-- STYLE SHEETS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,17 +31,19 @@
 </head>
 
 <body>
-    <header>
-        <h1>Vault Of Jukes</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li class="active"><a href="#">Upcoming Projects</a></li>
-        </ul>
-    </nav>
+    <!-- <header> </header> -->
     <main>
+        <h1>Vault Of Jukes</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li class="active"><a href="#">Upcoming Projects</a></li>
+            </ul>
+        </nav>
+        <button type="button" id="menu"></button>
+<h2>Upcoming Projects</h2>
+
         <p>implement large cards for each upcoming project,
             possibly have the cards able to resize, cards include standard info
             like title, expected date, status, description, and key features list
@@ -61,12 +63,10 @@
         </p>
 
     </main>
-    <footer>
+    <footer id="foot">
         <div class="footer-links"><a href="siteplan.html">Site Plan</a></div>
         <p><span id="currentyear"></span> 🇺🇸 David Jukes 🇺🇸 Texas, USA</p>
-        <!-- year should be displayed as the copyright symbol then just year -->
         <p id="lastModified"></p>
-        <!-- last modified should be in this format: 05/30/2025 13:52:42 -->
     </footer>
 </body>
 
