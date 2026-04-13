@@ -38,6 +38,11 @@
     top: 35rem;
     left: 1rem;
 }
+
+.card {
+    max-height: 55rem;
+}
+
  .lil-card {
      max-height: 32rem;
  }

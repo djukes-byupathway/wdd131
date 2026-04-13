@@ -107,7 +107,6 @@ main {
 }
 
 h2 {
-    font-family: 'Caveat', cursive;
     margin: 1rem;
     font-size: 3rem;
 }
@@ -136,6 +135,7 @@ h3 {
 }
 /* card heading spans all columns and is centered horizontally */
 .card h4 {
+    
     grid-area: 1 / 1 / 4 / 4;
     text-align: center;
 }
@@ -177,6 +177,8 @@ h3 {
 }
 
 .proj-card h4 {
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
     grid-column: span 3;
     text-align: center;
 }
